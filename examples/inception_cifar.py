@@ -84,6 +84,7 @@ def train():
         writer.add_graph(sess.graph)
         for epoch_id in range(FLAGS.maxepoch):
             # train one epoch
+            print(epoch_id)
             trainer.train_epoch(sess, keep_prob=FLAGS.keep_prob, summary_writer=writer)
             # test the model on validation set after each epoch
             trainer.valid_epoch(sess, dataflow=valid_data, summary_writer=writer)
