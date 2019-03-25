@@ -17,9 +17,9 @@ from src.helper.trainer import Trainer
 from src.helper.evaluator import Evaluator
 
 
-DATA_PATH = '/scratch/song.guan/GoogLeNet-Inception/cifar/'
-SAVE_PATH = '/scratch/song.guan/GoogLeNet-Inception/out'
-PRETRINED_PATH = '/scratch/song.guan/GoogLeNet-Inception/src/nets/googlenet.py'
+DATA_PATH = '/home/guanzhou_song/GoogLeNet-Inception/cifar/'
+SAVE_PATH = '/home/guanzhou_song/GoogLeNet-Inception/out'
+PRETRINED_PATH = '/home/guanzhou_song/GoogLeNet-Inception/src/nets/googlenet.py'
 IM_PATH = '../data/cifar/'
 
 
