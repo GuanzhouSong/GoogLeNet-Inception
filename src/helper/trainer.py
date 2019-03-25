@@ -74,7 +74,7 @@ class Trainer(object):
             im = batch_data['image']
             label = batch_data['label']
             _, loss, acc = sess.run(
-                [self._train_op, self._train_loss_op, self._train_accuracy_op], 
+                [self._train_op, self._train_loss_op, self._train_accuracy_op],
                 feed_dict={self._t_model.image: im,
                            self._t_model.label: label,
                            self._t_model.lr: self._lr,
@@ -84,6 +84,7 @@ class Trainer(object):
             acc_sum += acc
 
             if step % 100 == 0:
+                print(self.global_step)
                 display(self.global_step,
                     step,
                     [loss_sum, acc_sum],
@@ -116,7 +117,7 @@ class Trainer(object):
             im = batch_data['image']
             label = batch_data['label']
             loss, acc = sess.run(
-                [self._valid_loss_op, self._valid_accuracy_op], 
+                [self._valid_loss_op, self._valid_accuracy_op],
                 feed_dict={self._v_model.image: im,
                            self._v_model.label: label})
 
