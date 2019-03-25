@@ -17,9 +17,9 @@ from src.helper.trainer import Trainer
 from src.helper.evaluator import Evaluator
 
 
-DATA_PATH = '/home/qge2/workspace/data/dataset/cifar/'
-SAVE_PATH = '/home/qge2/workspace/data/out/googlenet/cifar/'
-PRETRINED_PATH = '/home/qge2/workspace/data/pretrain/inception/googlenet.npy'
+DATA_PATH = '/scratch/song.guan/GoogLeNet-Inception/cifar/'
+SAVE_PATH = '/scratch/song.guan/GoogLeNet-Inception/out'
+PRETRINED_PATH = '/scratch/song.guan/GoogLeNet-Inception/src/nets/googlenet.py'
 IM_PATH = '../data/cifar/'
 
 
