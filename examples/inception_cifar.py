@@ -17,10 +17,10 @@ from src.helper.trainer import Trainer
 from src.helper.evaluator import Evaluator
 
 
-DATA_PATH = '/home/guanzhou_song/GoogLeNet-Inception/cifar/'
+DATA_PATH = '/home/guanzhou_song/GoogLeNet-Inception/cifar-10/'
 SAVE_PATH = '/home/guanzhou_song/GoogLeNet-Inception/out'
 PRETRINED_PATH = '/home/guanzhou_song/GoogLeNet-Inception/src/nets/googlenet.py'
-IM_PATH = '../data/cifar/'
+IM_PATH = '/home/guanzhou_song/GoogLeNet-Inception/cifar-10/'
 
 
 def get_args():
